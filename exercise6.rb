@@ -9,6 +9,10 @@ shopping_list.push("rice")
 
 print(shopping_list)
 
-
+if shopping_list.include? "banana"
+	puts "You need banana"
+else
+	puts "You do not need banana"
+end
 
 
