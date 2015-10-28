@@ -1,7 +1,9 @@
 def display(cohort_list)
-	cohort_list.each do |cohort, students|
-		puts "#{cohort}: #{students} students"
+	cohort_list.each do |key, value|
+		value2 = value.to_f + (value.to_f * 0.05)
+		puts "#{key}: #{value2} students"
 	end
+
 end
 
 students = {
@@ -11,5 +13,8 @@ students = {
 }
 
 students[:cohort4] = 43
+students.delete(:cohort2)
 
 display(students)
+
+puts students.keys
